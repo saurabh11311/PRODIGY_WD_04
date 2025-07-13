@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saurabh Patel - Portfolio</title>
+  <style>
+    * {
+      color: white;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      background: #f9f9f9;
+    }
+
+    header {
+      background: #4012c9;
+      color: #fff;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      padding: 100px 50px;
+      min-height: 100vh;
+    }
+
+    #hero {
+      background: linear-gradient(to right, #4f46e5, #1b212b);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    #hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    #hero p {
+      font-size: 20px;
+      max-width: 600px;
+    }
+
+    #about,
+    #projects,
+    #contact {
+      background: #0360bd;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2.section-title {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #319a4d;
+    }
+
+    .project-card {
+      padding: 15px;
+      margin: 10px 0;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(6, 162, 61, 0.1);
+    }
+
+    footer {
+      background: #215994;
+      color: #dec6c6;
+      text-align: center;
+      padding: 20px;
+      margin-top: -21px;
+    }
+
+    button {
+      background: hsl(35, 76%, 49%);
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #0f55fa;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Saurabh Patel</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+
+
+  <section id="hero">
+    <h2>Hi, I'm Saurabh Patel</h2>
+    <p>
+      A passionate web developer with a knack for creating stunning and functional websites. I specialize in front-end
+      development and love bringing ideas to life through code.
+    </p>
+    <button onclick="document.getElementById('contact').scrollIntoView()">Hire Me</button>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>Hi! I'm Saurabh Patel, a passionate and creative Web Developer with a strong foundation in HTML, CSS, JavaScript,
+      and modern frameworks like React and Node.js. <br> I specialize in building responsive, user-friendly websites and
+      web
+      applications that deliver real value to users.
+      With a keen eye for design and performance, I turn ideas into fully functional digital experiences. Whether it's a
+      sleek landing page, an interactive portfolio, or a full-stack web app, I love crafting clean, optimized code and
+      pixel-perfect layouts.
+      <br>
+      I'm always eager to learn new technologies, solve real-world problems, and collaborate with creative teams. Let's
+      build something amazing together!
+      <br>
+      When I'm not coding, you can find me exploring the latest web trends, contributing to open-source projects, or
+      experimenting with new design ideas. I'm excited to connect with like-minded individuals and take on new
+      challenges
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">My Projects</h2>
+    <div class="project-card">
+      <h3>Tic tac toe </h3>
+
+
+      <p>
+        A simple two-player Tic Tac Toe game built using HTML, CSS, and JavaScript. It features turn-based gameplay,
+        win/draw detection, and a responsive user interface. This project highlights my skills in DOM manipulation and
+        JavaScript logic.
+      </p>
+    </div>
+    <div class="project-card">
+      <h3>Resopsive landing page </h3>
+      <p>
+        A modern and fully responsive landing page designed using HTML, CSS, and JavaScript. It adapts seamlessly to all
+        screen sizes and includes smooth animations, interactive elements, and a clean layout. This project demonstrates
+        my front-end design skills and understanding of responsive web design principles.
+
+
+      </p>
+    </div>
+    <div class="project-card">
+      <h3>Stop Watch web application </h3>
+
+      <p>
+        A simple and interactive stopwatch built using HTML, CSS, and JavaScript. It includes features like start, stop,
+        reset, and real-time time tracking. The UI is responsive and styled for both desktop and mobile devices. This
+        project highlights my skills in time-based JavaScript functions and event handling.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <p>Email: saurabha11311@gmail.com</p>
+    <p>LinkedIn: <a href="#" target="_blank">www.linkedin.com/in/saurabhpatel11311</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+
+  <script>
+    // Example: Smooth scroll already handled by CSS scroll-behavior
+    // Add any JS interactivity here (e.g., dynamic project load, form submit)
+    console.log("Portfolio loaded");
+  </script>
+
+
+</body>
+
+</html>
